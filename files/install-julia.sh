@@ -20,6 +20,9 @@ case $VERSION in
     0.6)
         URL=https://julialang-s3.julialang.org/bin/linux/x64/0.6/julia-0.6.4-linux-x86_64.tar.gz
         ;;
+    0.7)
+        URL=https://julialang-s3.julialang.org/bin/linux/x64/0.7/julia-0.7.0-linux-x86_64.tar.gz
+        ;;
     1.0)
         URL=https://julialang-s3.julialang.org/bin/linux/x64/1.0/julia-1.0.1-linux-x86_64.tar.gz
         ;;
@@ -27,7 +30,7 @@ case $VERSION in
         URL=https://julialangnightlies-s3.julialang.org/bin/linux/x64/julia-latest-linux64.tar.gz
         ;;
     *)
-        echo "Unknown Julia version '$1'. Use '1.0', '0.6' or 'nightly'."
+        echo "Unknown Julia version '$1'. Use '1.0', '0.7', '0.6' or 'nightly'."
         exit 1
 esac
 
