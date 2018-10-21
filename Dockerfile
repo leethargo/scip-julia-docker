@@ -5,7 +5,7 @@ WORKDIR /test
 ADD files/install-julia.sh /test/install-julia.sh
 
 RUN apt-get update \
-  apt-get install --no-install-recommends -qq \
+  && apt-get install --no-install-recommends -qq \
   build-essential ca-certificates git rsync unzip wget \
   && /test/install-julia.sh 1.0 \
   && /test/install-julia.sh 0.7 \
